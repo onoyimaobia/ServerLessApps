@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "005ac9c9-a9e6-4ce2-ba2b-893861d447b5": {
+      "ProjectGuid": "005ac9c9-a9e6-4ce2-ba2b-893861d447b5",
+      "DisplayName": "azureblob",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "84dae9a7-0d3f-4142-a75a-69c45603291b": {
+      "ProjectGuid": "84dae9a7-0d3f-4142-a75a-69c45603291b",
+      "DisplayName": "AzureFunctionWeb",
+      "ColorIndex": 1
+    },
+    "fa052091-948c-464a-b1cf-4deb7cf0d15f": {
+      "ProjectGuid": "fa052091-948c-464a-b1cf-4deb7cf0d15f",
+      "DisplayName": "AzureFunc",
+      "ColorIndex": 2
+    },
+    "151232f9-8c59-4c64-a03e-26497d1c6f86": {
+      "ProjectGuid": "151232f9-8c59-4c64-a03e-26497d1c6f86",
+      "DisplayName": "Durable",
+      "ColorIndex": 3
+    },
+    "a5e59a41-26e1-4b9d-9ab6-0a1cff651099": {
+      "ProjectGuid": "a5e59a41-26e1-4b9d-9ab6-0a1cff651099",
+      "DisplayName": "AzureDurable",
+      "ColorIndex": 4
+    },
+    "2b7fa877-f7ff-4d9e-b687-ad08761ec537": {
+      "ProjectGuid": "2b7fa877-f7ff-4d9e-b687-ad08761ec537",
+      "DisplayName": "RedisCache",
+      "ColorIndex": 5
+    },
+    "a99a645c-d169-470a-8b5f-276ba68befed": {
+      "ProjectGuid": "a99a645c-d169-470a-8b5f-276ba68befed",
+      "DisplayName": "AzureSpookyLogic",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}

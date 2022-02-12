@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "OOHviUz07oP804p2yuO6+jDF1jxaSfhc+RQU4tGtj66E64+6p6H02Vju/USvooIrBgFKLPVeTJeA3LEw6MXIlg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\roselineagbo\\source\\repos\\AzureApp\\serverlessapps\\AzureFunctionWeb\\AzureFunctionWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\azure.storage.blobs\\12.10.0\\azure.storage.blobs.12.10.0.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\azure.storage.common\\12.9.0\\azure.storage.common.12.9.0.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
+    "C:\\Users\\roselineagbo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>azureblob</name>
+    </assembly>
+    <members>
+        <member name="M:azureblob.Controllers.BlobController.#ctor(azureblob.Services.IBlobService)">
+            <summary>
+            ctor
+            </summary>
+            <param name="blobService"></param>
+        </member>
+        <member name="M:azureblob.Controllers.BlobController.Manage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="containerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Controllers.BlobController.ViewFile(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="containerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Controllers.BlobController.DeleteFile(System.String,System.String)">
+            <summary>
+            
+            </summary> 
+            <param name="name"></param>
+            <param name="containerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Controllers.BlobController.UploadBlob(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="containerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Controllers.BlobController.UploadBlob(System.String,azureblob.Models.Blob,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            
+            </summary>
+            <param name="containerName"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:azureblob.Controllers.ContainerController">
+            <summary>
+             container
+            </summary>
+        </member>
+        <member name="M:azureblob.Controllers.ContainerController.#ctor(azureblob.Services.IContainerService)">
+            <summary>
+            ctor
+            </summary>
+            <param name="containerservice"></param>
+        </member>
+        <member name="M:azureblob.Controllers.ContainerController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Controllers.ContainerController.Create(azureblob.Models.Container)">
+            <summary>
+            
+            </summary>
+            <param name="container"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Controllers.HomeController.#ctor(Microsoft.Extensions.Logging.ILogger{azureblob.Controllers.HomeController},azureblob.Services.IContainerService,azureblob.Services.IBlobService)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="containerservice"></param>
+            <param name="blobService"></param>
+        </member>
+        <member name="T:azureblob.Models.Blob">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:azureblob.Models.Container">
+            <summary>
+            container class
+            </summary>
+        </member>
+        <member name="T:azureblob.Services.BlobService">
+            <summary>
+            implementation of blob service
+            </summary>
+        </member>
+        <member name="M:azureblob.Services.BlobService.#ctor(Azure.Storage.Blobs.BlobServiceClient)">
+            <summary>
+            ctor
+            </summary>
+            <param name="blobServiceClient"></param>
+        </member>
+        <member name="M:azureblob.Services.BlobService.DeleteBlob(System.String,System.String)">
+            <inheritdoc cref="M:azureblob.Services.IBlobService.DeleteBlob(System.String,System.String)"/>
+        </member>
+        <member name="M:azureblob.Services.BlobService.GetAllBlobs(System.String)">
+            <inheritdoc cref="M:azureblob.Services.IBlobService.GetAllBlobs(System.String)"/>
+        </member>
+        <member name="M:azureblob.Services.BlobService.GetAllBlobsWithUri(System.String)">
+            <inheritdoc cref="M:azureblob.Services.IBlobService.GetAllBlobsWithUri(System.String)"/>
+        </member>
+        <member name="M:azureblob.Services.BlobService.GetBlob(System.String,System.String)">
+            <inheritdoc cref="M:azureblob.Services.IBlobService.GetBlob(System.String,System.String)"/>
+        </member>
+        <member name="M:azureblob.Services.BlobService.UploadBlob(System.String,Microsoft.AspNetCore.Http.IFormFile,System.String,azureblob.Models.Blob)">
+            <inheritdoc cref="M:azureblob.Services.IBlobService.UploadBlob(System.String,Microsoft.AspNetCore.Http.IFormFile,System.String,azureblob.Models.Blob)"/>
+        </member>
+        <member name="T:azureblob.Services.ContainerService">
+            <summary>
+            implemetation of i conatiner service. 
+            This service implementation lets you perform crud
+            operation in azure blob storage account by injecting blob client.
+            </summary>
+        </member>
+        <member name="M:azureblob.Services.ContainerService.#ctor(Azure.Storage.Blobs.BlobServiceClient)">
+            <summary>
+            constructor
+            </summary>
+            <param name="blobServiceClient"></param>
+        </member>
+        <member name="M:azureblob.Services.ContainerService.CreateContainer(System.String)">
+            <inheritdoc cref="M:azureblob.Services.IContainerService.CreateContainer(System.String)"/>
+        </member>
+        <member name="M:azureblob.Services.ContainerService.DeleteContainer(System.String)">
+            <inheritdoc cref="M:azureblob.Services.IContainerService.DeleteContainer(System.String)"/>
+        </member>
+        <member name="M:azureblob.Services.ContainerService.GetAllContainers">
+            <inheritdoc cref="M:azureblob.Services.IContainerService.GetAllContainers"/>
+        </member>
+        <member name="M:azureblob.Services.ContainerService.GetAllContainersndBlobs">
+            <inheritdoc cref="M:azureblob.Services.IContainerService.GetAllContainersndBlobs"/>
+        </member>
+        <member name="T:azureblob.Services.IBlobService">
+            <summary>
+             interface for  blob crud operation
+            </summary>
+        </member>
+        <member name="M:azureblob.Services.IBlobService.UploadBlob(System.String,Microsoft.AspNetCore.Http.IFormFile,System.String,azureblob.Models.Blob)">
+            <summary>
+            upload a new blob
+            </summary>
+            <param name="name"></param>
+            <param name="file"></param>
+            <param name="containerName"></param>
+            <param name="blob"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Services.IBlobService.DeleteBlob(System.String,System.String)">
+            <summary>
+            delete a blob
+            </summary>
+            <param name="name"></param>
+            <param name="containerName"></param>
+            <returns>{bool}</returns>
+        </member>
+        <member name="M:azureblob.Services.IBlobService.GetAllBlobs(System.String)">
+            <summary>
+             get all blob in a particluar container 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Services.IBlobService.GetBlob(System.String,System.String)">
+            <summary>
+            get a single container
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Services.IBlobService.GetAllBlobsWithUri(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="containerName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:azureblob.Services.IContainerService">
+            <summary>
+            interface used to perform crud operation on blob containers
+            </summary>
+        </member>
+        <member name="M:azureblob.Services.IContainerService.CreateContainer(System.String)">
+            <summary>
+            create a new container
+            </summary>
+            <param name="containerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Services.IContainerService.DeleteContainer(System.String)">
+            <summary>
+            delete a container by passing container name
+            </summary>
+            <param name="containerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Services.IContainerService.GetAllContainers">
+            <summary>
+             get all container created in the blob storage
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:azureblob.Services.IContainerService.GetAllContainersndBlobs">
+            <summary>
+            get all container and the contents(blobs) created in the azure blob storage
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
